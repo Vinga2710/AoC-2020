@@ -212,3 +212,17 @@ for (let x = 0; x <= numbers.length; x++) {
     }
   }
 }
+for (let x = 0; x <= numbers.length; x++) {
+  for (y = x + 1; y <= numbers.length; y++) {
+    for (z = y + 1; z <= numbers.length; z++) {
+      const n1 = numbers[x];
+      const n2 = numbers[y];
+      const n3 = numbers[z];
+      if (n1 + n2 + n3 === 2020) {
+        console.log(n1, n2, n3);
+        console.log(n1 * n2 * n3);
+        break;
+      }
+    }
+  }
+}
